@@ -1,0 +1,26 @@
+--cpu Cortex-M3
+"sonarsample\startup_stm32f103xb.o"
+"sonarsample\main.o"
+"sonarsample\stm32f1xx_it.o"
+"sonarsample\stm32f1xx_hal_msp.o"
+"sonarsample\fonts.o"
+"sonarsample\ssd1306.o"
+"sonarsample\stm32f1xx_hal_gpio_ex.o"
+"sonarsample\stm32f1xx_hal_i2c.o"
+"sonarsample\stm32f1xx_hal.o"
+"sonarsample\stm32f1xx_hal_rcc.o"
+"sonarsample\stm32f1xx_hal_rcc_ex.o"
+"sonarsample\stm32f1xx_hal_gpio.o"
+"sonarsample\stm32f1xx_hal_dma.o"
+"sonarsample\stm32f1xx_hal_cortex.o"
+"sonarsample\stm32f1xx_hal_pwr.o"
+"sonarsample\stm32f1xx_hal_flash.o"
+"sonarsample\stm32f1xx_hal_flash_ex.o"
+"sonarsample\stm32f1xx_hal_exti.o"
+"sonarsample\stm32f1xx_hal_tim.o"
+"sonarsample\stm32f1xx_hal_tim_ex.o"
+"sonarsample\system_stm32f1xx.o"
+--strict --scatter "SonarSample\SonarSample.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "SonarSample.map" -o SonarSample\SonarSample.axf

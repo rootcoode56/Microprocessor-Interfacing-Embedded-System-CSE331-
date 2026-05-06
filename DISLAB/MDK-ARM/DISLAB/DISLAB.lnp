@@ -1,0 +1,23 @@
+--cpu Cortex-M3
+"dislab\startup_stm32f103xb.o"
+"dislab\liquidcrystal_i2c.o"
+"dislab\main.o"
+"dislab\stm32f1xx_it.o"
+"dislab\stm32f1xx_hal_msp.o"
+"dislab\stm32f1xx_hal_gpio_ex.o"
+"dislab\stm32f1xx_hal_i2c.o"
+"dislab\stm32f1xx_hal.o"
+"dislab\stm32f1xx_hal_rcc.o"
+"dislab\stm32f1xx_hal_rcc_ex.o"
+"dislab\stm32f1xx_hal_gpio.o"
+"dislab\stm32f1xx_hal_dma.o"
+"dislab\stm32f1xx_hal_cortex.o"
+"dislab\stm32f1xx_hal_pwr.o"
+"dislab\stm32f1xx_hal_flash.o"
+"dislab\stm32f1xx_hal_flash_ex.o"
+"dislab\stm32f1xx_hal_exti.o"
+"dislab\system_stm32f1xx.o"
+--strict --scatter "DISLAB\DISLAB.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "DISLAB.map" -o DISLAB\DISLAB.axf
